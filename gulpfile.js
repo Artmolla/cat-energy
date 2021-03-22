@@ -42,8 +42,8 @@ exports.styles = styles;
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
@@ -55,8 +55,8 @@ exports.images = images;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"))
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -65,9 +65,9 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/*.svg")
-  .pipe(svgstore())
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img/"))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img/"))
 }
 
 exports.sprite = sprite;
@@ -76,8 +76,8 @@ exports.sprite = sprite;
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest("build"))
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"))
 }
 
 exports.html = html;
@@ -90,7 +90,7 @@ const scripts = () => {
     .pipe(rename(function (path) {
       path.basename += ".min";
       path.extname = ".js";
-  }))
+    }))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -105,10 +105,10 @@ const copy = () => {
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
   ],
-  {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"))
+    {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"))
 }
 
 exports.copy = copy;
