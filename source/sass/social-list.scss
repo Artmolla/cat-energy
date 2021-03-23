@@ -1,0 +1,11 @@
+.social-list {
+  @include flex;
+}
+
+.social-list__item {
+  margin-right: 39px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

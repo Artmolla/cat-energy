@@ -1,0 +1,28 @@
+.cooperation-contacts {
+  @include flex;
+
+  position: absolute;
+  top: 95px;
+  left: 110px;
+  box-sizing: border-box;
+  width: 570px;
+  height: 201px;
+  padding: 48px 52px 52px 76px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white;
+}
+
+.cooperation-contacts__text {
+  flex-basis: 50%;
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.cooperation-contacts__address {
+  font-family: $additional-font;
+  font-size: 16px;
+  font-style: normal;
+  flex-basis: 50%;
+}

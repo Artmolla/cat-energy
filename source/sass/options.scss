@@ -1,0 +1,76 @@
+.options {
+  padding: 82px 110px 71px 110px;
+}
+
+.options__list {
+  @include flex;
+
+  justify-content: space-between;
+}
+
+.options__item {
+  @include flex;
+
+  flex-basis: 40%;
+  padding: 47px 30px 58px 52px;
+  background-color: $grey;
+}
+
+.options__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 30px 0 58px 0;
+}
+
+.options__info {
+  font-family: $additional-font;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 27px;
+}
+
+.options__decorative-element {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 62px;
+  background-color: $green;
+
+  &::before {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    content: "";
+  }
+}
+
+.options__decorative-element--gain {
+  &::before {
+    top: 47%;
+    left: 47%;
+    width: 134px;
+    height: 56px;
+    background: url("../img/icon-moving-cat.svg") no-repeat;
+  }
+}
+
+.options__decorative-element--lose {
+  &::before {
+    top: 41%;
+    left: 50%;
+    width: 70px;
+    height: 97px;
+    background: url("../img/icon-sitting-cat.svg") no-repeat;
+  }
+}
+
+.options__action {
+  @include flex;
+
+  align-items: center;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}

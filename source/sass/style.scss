@@ -1,3 +1,15 @@
-.page {
-  background-color: rgb(163, 101, 163);
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "page.scss";
+@import "main-navigation.scss";
+@import "intro.scss";
+@import "button.scss";
+@import "options.scss";
+@import "how-it-works.scss";
+@import "example.scss";
+@import "slider.scss";
+@import "map.scss";
+@import "cooperation-contacts.scss";
+@import "social-list.scss";

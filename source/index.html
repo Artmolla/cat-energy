@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Функциональное питание для котов">
+  <link rel="stylesheet" href="css/style.css">
   <title>Cat Energy</title>
 </head>
 
@@ -59,55 +60,69 @@
           </clipPath>
         </defs>
       </svg>
-
     </a>
-    <nav class="navigation">
-      <ul class="navigation__list list-reset">
-        <li class="navigation__item">
-          <a class="navigation__action navigation__action--active link-reset">Главная</a>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list list-reset">
+        <li class="main-navigation__item">
+          <a class="main-navigation__action main-navigation__action--active link-reset">Главная</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__action link-reset" href="catalog.html">Каталог продукции</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__action link-reset" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__action link-reset" href="form.html">Подбор программы</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__action link-reset" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
+    <section class="intro">
+      <h1 class="intro__title">Функциональное питание для котов</h1>
+      <p class="intro__text">Занялся собой? Займись котом!</p>
+      <a class="button link-reset" href="#">Подобрать программу</a>
+      <img class="intro__image" src="img/index-chicken-can-desktop.png" alt="Cat Energy Pro со вкусом курицы"
+        width="552" height="499">
+    </section>
   </header>
   <main>
-    <section class="intro">
-      <h1>Функциональное питание для котов</h1>
-      <p>Занялся собой? Займись котом!</p>
-      <a class="button link-reset" href="#">Подобрать программу</a>
-      <img src="img/index-chicken-can-desktop.png" alt="Cat Energy Pro со вкусом курицы" width="552" height="499">
-    </section>
     <section class="options">
       <h2 class="visually-hidden">Выбирите программу для вашего питомца</h2>
       <ul class="options__list list-reset">
         <li class="options__item">
+          <div class="options__decorative-element options__decorative-element--lose"></div>
           <h3 class="options__title">Похудение</h3>
           <p class="options__info">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
             поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="options__action link-reset" href="#">Каталог slim</a>
+          <a class="options__action link-reset" href="#">
+            Каталог slim
+            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="currentColor" stroke-width="2" />
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="currentColor" />
+            </svg>
+          </a>
         </li>
         <li class="options__item">
+          <div class="options__decorative-element options__decorative-element--gain"></div>
           <h3 class="options__title">Набор массы</h3>
           <p class="options__info">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!
           </p>
-          <a class="options__action link-reset" href="#">Каталог pro</a>
+          <a class="options__action link-reset" href="#">
+            Каталог pro
+            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="currentColor" stroke-width="2" />
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="currentColor" />
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
     <section class="how-it-works">
-      <h2>Как это работает</h2>
-      <ul class="how-it-works__list list-reset">
+      <h2 class="how-it-works__title">Как это работает</h2>
+      <ol class="how-it-works__list list-reset">
         <li class="how-it-works__item">
-          <span class="how-it-works__icon">
+          <div class="how-it-works__icon">
             <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path
@@ -120,11 +135,12 @@
                 </clipPath>
               </defs>
             </svg>
-          </span>
-          Функциональное питание содержит только полезные питательные вещества.
+          </div>
+          <p class="how-it-works__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          <span class="how-it-works__number">1</span>
         </li>
         <li class="how-it-works__item">
-          <span class="how-it-works__icon">
+          <div class="how-it-works__icon">
             <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 31" width="29" height="31">
               <g clip-path="url(#clip0)" fill="#fff">
                 <path
@@ -145,11 +161,12 @@
                 </clipPath>
               </defs>
             </svg>
-          </span>
-          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </div>
+          <p class="how-it-works__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <span class="how-it-works__number">2</span>
         </li>
         <li class="how-it-works__item">
-          <span class="how-it-works__icon">
+          <div class="how-it-works__icon">
             <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M18.6173 0.0761497C18.991 -0.0786313 19.4211 0.00692445 19.7071 0.292922C20.6156 1.20142 21.8038 3.17065 22.7659 6.21082C23.7373 9.28039 24.5 13.5081 24.5 19C24.5 19.5523 24.0523 20 23.5 20H20V29C20 29.5523 19.5523 30 19 30C18.4477 30 18 29.5523 18 29V1.00003C18 0.595567 18.2436 0.230931 18.6173 0.0761497ZM20 18H22.4912C22.4053 13.1836 21.7051 9.48755 20.8591 6.81424C20.5807 5.93457 20.2885 5.1715 20 4.51895V18Z"
@@ -164,11 +181,12 @@
                 d="M10.5 0C9.94771 0 9.5 0.447715 9.5 1V6.5C9.5 7.05686 9.30797 7.81518 8.79912 8.41656C8.31999 8.98281 7.4854 9.5 5.99993 9.5C5.44765 9.5 5.00007 9.94771 5.00007 10.5C5.00007 11.0523 5.44765 11.5 5.99993 11.5C8.01439 11.5 9.43005 10.7672 10.3259 9.70844C11.192 8.68482 11.5 7.44314 11.5 6.5V1C11.5 0.447715 11.0523 0 10.5 0Z"
                 fill="white" />
             </svg>
-          </span>
-          Замените один-два приема обычной еды на наше функциональное питание.
+          </div>
+          <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <span class="how-it-works__number">3</span>
         </li>
         <li class="how-it-works__item">
-          <span class="how-it-works__icon">
+          <div class="how-it-works__icon">
             <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 33" width="32" height="33">
               <ellipse cx="21.204" cy="11.33" rx="1.087" ry="1.085" fill="#fff" />
               <ellipse cx="10.331" cy="11.33" rx="1.087" ry="1.085" fill="#fff" />
@@ -190,14 +208,14 @@
               <path fill="#fff" d="M15 6V2h1.5v4z" />
               <rect x="8" y="2" width="15.5" height="1.5" rx=".75" fill="#fff" />
             </svg>
-
-          </span>
-          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </div>
+          <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <span class="how-it-works__number">4</span>
         </li>
-      </ul>
+      </ol>
     </section>
     <section class="example">
-      <h2>Живой пример</h2>
+      <h2 class="example__title">Живой пример</h2>
       <div class="example__card">
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -205,24 +223,35 @@
         </p>
         <p class="example__in-numbers">5кг <span class="example__text">снижение веса</span></p>
         <p class="example__in-numbers">60 дней <span class="example__text">затрачено времени</span></p>
-        <p>Затраты на питание: <span class="example__expenses">15 000 руб.</span></p>
+        <p class="example__expenses">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
       </div>
       <div class="slider">
         <div class="slider__image-container">
-          <img src="img/cat-fat.png" alt="Fat cat" width="677" height="520">
+          <div class="slider__before">
+            <img class="slider__image slider__image--before" src="img/before-cat-fat.png" alt="Пухленький котик"
+              width="953" height="536">
+          </div>
+          <div class="slider__after">
+            <img class="slider__image slider__image--after" src="img/after-cat-tiny.png" alt="Тоненький котик"
+              width="953" height="536">
+          </div>
         </div>
         <div class="slider__controls">
-          <div class="slider__bar"></div>
-          <div class="slider__toggle"></div>
+          <span class="slider__text">Было</span>
+          <div class="slider__bar">
+            <div class="slider__toggle"></div>
+          </div>
+          <span class="slider__text">Стало</span>
         </div>
       </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
-      <div class="map__contact-information">
-        <p>Приглашаем к сотрудничеству дилеров!</p>
-        <address>
-          <p>ул. Большая Конюшенная, д. 19/8</p>
+      <img src="img/map.png" alt="Наш адрес" width="1440" height="400">
+      <div class="cooperation-contacts">
+        <p class="cooperation-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="cooperation-contacts__address">
+          <p>ул. Большая<br> Конюшенная, д. 19/8</p>
           <p>Санкт-Петербург</p>
         </address>
       </div>
