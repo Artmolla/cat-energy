@@ -1,0 +1,59 @@
+.example {
+  display: grid;
+  grid-template-columns: 36% auto;
+  grid-template-rows: max-content;
+  padding: 19px 110px 55px 110px;
+  background: linear-gradient(to bottom, $white 205px, $grey 205px);
+}
+
+.example__title {
+  @include title;
+
+  margin-bottom: 131px;
+}
+
+.example__card {
+  @include flex;
+
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.example__description {
+  font-family: $additional-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 37px;
+}
+
+.example__in-numbers {
+  @include flex;
+
+  font-size: 30px;
+  position: relative;
+  width: 162px;
+  height: 77px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $dark-grey;
+  border-radius: 3px;
+  margin-right: 45px;
+  text-transform: uppercase;
+}
+
+.example__text {
+  position: absolute;
+  bottom: -20px;
+  text-transform: lowercase;
+  font-family: $additional-font;
+  font-size: 14px;
+  border: 8px solid $grey;
+  background-color: $grey;
+}
+
+.example__expenses {
+  flex-basis: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+}

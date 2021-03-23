@@ -1,0 +1,28 @@
+.page {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+}
+
+.page__header {
+  @include flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 53px 110px 129px 110px;
+  background:
+    linear-gradient(to right, $white, $white 50%, $green-opacity 50%) no-repeat left,
+    url("../img/desktop-cat-bg.jpg") no-repeat top right;
+}
+
+.page__footer {
+  @include flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 57px 110px;
+  background-color: $grey;
+}

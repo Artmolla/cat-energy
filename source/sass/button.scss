@@ -1,0 +1,11 @@
+.button {
+  @include flex-center;
+
+  padding: 17px 27px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+}

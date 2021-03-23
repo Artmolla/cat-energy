@@ -1,0 +1,53 @@
+.how-it-works {
+  padding: 0 110px 40px 110px;
+}
+
+.how-it-works__title {
+  @include title;
+
+  margin: 0 0 72px 0;
+}
+
+.how-it-works__list {
+  @include flex;
+
+  justify-content: space-between;
+}
+
+.how-it-works__item {
+  position: relative;
+  flex-basis: 20%;
+  margin-right: 25px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.how-it-works__text {
+  font-family: $additional-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.how-it-works__number {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  z-index: -1;
+  font-size: 280px;
+  line-height: 280px;
+  color: $grey;
+}
+
+.how-it-works__icon {
+  @include flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 32px;
+  background-color: $green;
+}
