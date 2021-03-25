@@ -1,0 +1,7 @@
+.title {
+  @include title;
+}
+
+.title--second {
+  @include title-second;
+}

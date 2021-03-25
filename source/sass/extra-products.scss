@@ -1,0 +1,32 @@
+.extra-products {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.extra-products__item {
+  display: grid;
+  grid-template-columns: 1fr 244px;
+  column-gap: 38px;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid $dark-grey;
+
+  &:last-of-type {
+    border-bottom: 1px solid $dark-grey;
+  }
+}
+
+.extra-products__name {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.extra-products__size {
+  width: 25%;
+}
+
+.extra-products__price {
+  text-align: right;
+}

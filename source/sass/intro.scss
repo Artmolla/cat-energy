@@ -1,14 +1,12 @@
 .intro {
   @include flex;
 
-  padding: 56px 80px;
+  padding: 56px 80px 165px 80px;
   position: relative;
   flex-basis: 100%;
 }
 
 .intro__title {
-  @include title;
-
   flex-basis: 50%;
   margin-bottom: 20px;
 }
@@ -23,7 +21,7 @@
 
 .intro__image {
   position: absolute;
-  top: 61%;
+  top: 49%;
   left: 50%;
   transform: translate(-29%, -50%);
 }
