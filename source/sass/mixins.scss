@@ -43,3 +43,14 @@
   font-size: 36px;
   line-height: 36px;
 }
+
+@mixin button-reset {
+  background: none;
+  border: none;
+}
+
+@mixin input-font-reset {
+  font-family: $main-font;
+  text-transform: uppercase;
+  font-style: 16px;
+}

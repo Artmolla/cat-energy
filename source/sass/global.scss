@@ -9,3 +9,13 @@
 .link-reset {
   @include link-reset;
 }
+
+.button-reset {
+  @include button-reset;
+
+  font-family: $main-font;
+}
+
+.input-font-reset {
+  @include input-font-reset;
+}
