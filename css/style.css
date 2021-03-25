@@ -42,8 +42,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 53px 110px 129px 110px;
+  padding: 53px 110px 20px 110px;
   background: linear-gradient(to right, #ffffff, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%) no-repeat left, url("../img/desktop-cat-bg.jpg") no-repeat top right; }
+
+.page__header--inner {
+  background: none; }
 
 .page__footer {
   display: flex;
@@ -52,6 +55,18 @@
   justify-content: space-between;
   padding: 57px 110px;
   background-color: #f2f2f2; }
+
+.title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px; }
+
+.title--second {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px; }
 
 .main-navigation__list {
   display: flex;
@@ -66,18 +81,17 @@
   .main-navigation__item:last-of-type {
     margin-right: 0; }
 
+.main-navigation__list--inner {
+  color: #000000; }
+
 .intro {
   display: flex;
   flex-wrap: wrap;
-  padding: 56px 80px;
+  padding: 56px 80px 165px 80px;
   position: relative;
   flex-basis: 100%; }
 
 .intro__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
   flex-basis: 50%;
   margin-bottom: 20px; }
 
@@ -90,7 +104,7 @@
 
 .intro__image {
   position: absolute;
-  top: 61%;
+  top: 49%;
   left: 50%;
   transform: translate(-29%, -50%); }
 
@@ -106,6 +120,23 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738; }
+
+.button--order {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px; }
+
+.button--order-all {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 40px 42px 12px 42px;
+  background: center no-repeat url("../img/gift-photo-desktop.jpg"); }
+
+.button__text {
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 20px; }
 
 .options {
   padding: 82px 110px 71px 110px; }
@@ -173,10 +204,6 @@
   padding: 0 110px 40px 110px; }
 
 .how-it-works__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
   margin: 0 0 72px 0; }
 
 .how-it-works__list {
@@ -224,10 +251,6 @@
   background: linear-gradient(to bottom, #ffffff 205px, #f2f2f2 205px); }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
   margin-bottom: 131px; }
 
 .example__card {
@@ -355,3 +378,87 @@
   margin-right: 39px; }
   .social-list__item:last-of-type {
     margin-right: 0; }
+
+.store {
+  padding: 0 110px 86px 110px; }
+
+.products__title {
+  margin: 51px 0 85px 0; }
+
+.products__title--extra {
+  margin: 30px 0 78px 0; }
+
+.products--extra {
+  display: grid;
+  grid-template-columns: 1fr 245px;
+  column-gap: 79px;
+  padding-top: 45px; }
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 63px 80px; }
+
+.product-list--extra {
+  grid-template-columns: auto;
+  grid-column: 1;
+  grid-row: 2; }
+
+.product-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 37px 35px 37px;
+  background: linear-gradient(to bottom, #ffffff 17%, #f2f2f2 17%); }
+
+.product-list__item--show-more {
+  padding-top: 130px; }
+
+.product-list__title {
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 10px 20px 10px; }
+
+.product-list__image {
+  margin-bottom: 40px; }
+
+.product-list__contents {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px; }
+
+.product-list__info {
+  text-align: right; }
+
+.extra-products {
+  grid-column: 1;
+  grid-row: 2; }
+
+.extra-products__item {
+  display: grid;
+  grid-template-columns: 1fr 244px;
+  column-gap: 38px;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid #dcdcdc; }
+  .extra-products__item:last-of-type {
+    border-bottom: 1px solid #dcdcdc; }
+
+.extra-products__name {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 50%; }
+
+.extra-products__size {
+  width: 25%; }
+
+.extra-products__price {
+  text-align: right; }
