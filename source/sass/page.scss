@@ -12,10 +12,14 @@
 
   justify-content: space-between;
   align-items: center;
-  padding: 53px 110px 129px 110px;
+  padding: 53px 110px 20px 110px;
   background:
     linear-gradient(to right, $white, $white 50%, $green-opacity 50%) no-repeat left,
     url("../img/desktop-cat-bg.jpg") no-repeat top right;
+}
+
+.page__header--inner {
+  background: none;
 }
 
 .page__footer {
