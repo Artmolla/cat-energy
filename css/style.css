@@ -514,12 +514,9 @@
   border: none; }
 
 .contact-form__about-cat--optional-info {
-  padding: 32px 87px 5px 87px;
-  margin-left: 18px; }
+  padding: 32px 87px 5px 87px; }
 
 .contact-form__about-owner {
-  display: flex;
-  flex-wrap: wrap;
   border: none;
   padding: 76px 110px 0 110px;
   border-top: 2px solid #68b738; }
@@ -562,6 +559,9 @@
 .contact-form__input:checked + label::before {
   background-color: #68b738; }
 
+.contact-form__label--additional:first-of-type {
+  margin-left: 60px; }
+
 .contact-form__label--additional::before {
   border-radius: 0; }
 
@@ -571,3 +571,8 @@
   column-gap: 20px;
   align-items: center;
   flex: 1; }
+
+.contact-form__checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
