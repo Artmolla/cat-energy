@@ -9,8 +9,11 @@ $black: #000000;
 $white: #ffffff;
 $green: #68b738;
 $grey: #f2f2f2;
+$light-grey: #cdcdcd;
 $dark-grey: #dcdcdc;
+$special-dark-grey: #e7e7e7;
 $green-opacity: rgba($green, 0.85);
 
 //shadows
 $basic-shadow: 0 1px 3px rgba($black, 0.16);
+$special-shadow: 0 0 0 2px $light-grey;

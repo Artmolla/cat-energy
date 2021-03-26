@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Функциональное питание для котов">
+  <link rel="stylesheet" href="css/style.css">
   <title>Form</title>
 </head>
 
 <body class="page">
-  <header class="page__header">
+  <header class="page__header page__header--inner">
     <a class="link-reset" href="index.html">
       <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 59" width="202" height="59">
         <g clip-path="url(#clip0)">
@@ -59,75 +60,103 @@
           </clipPath>
         </defs>
       </svg>
-
     </a>
-    <nav class="navigation">
-      <ul class="navigation__list list-reset">
-        <li class="navigation__item">
-          <a class="navigation__action navigation__action--active link-reset" href="index.html">Главная</a>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list main-navigation__list--inner list-reset">
+        <li class="main-navigation__item">
+          <a class="main-navigation__action main-navigation__action--active link-reset" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__action link-reset" href="catalog.html">Каталог продукции</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__action link-reset" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__action link-reset">Подбор программы</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__action link-reset">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="program-selection">
-      <h1>Подбор программы</h1>
-      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form action="#" method="#">
-        <fieldset>
-          <label for="#name-field">Имя:* </label>
-          <input type="text" name="name" id="name-field" placeholder="Барсик" required>
-          <label for="#weight-field">Вес:* </label>
-          <input type="number" name="weight" id="weight-field" placeholder="7" required>
-          <label for="#age-field">Возраст (лет):</label>
-          <input type="number" name="age" placeholder="7" id="age-field">
+      <h1 class="program-selection__title title">Подбор программы</h1>
+      <p class="program-selection__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
+      <form class="contact-form" action="#" method="#">
+        <div class="contact-form__input-group contact-form__input-group--cat-info">
+          <fieldset class="contact-form__about-cat contact-form__about-cat--main-info">
+            <div class="contact-form__container">
+              <label for="name-field">Имя:* </label>
+              <input class="contact-form__input input-font-reset" type="text" name="name" id="name-field"
+                placeholder="Барсик" required>
+            </div>
+            <div class="contact-form__container">
+              <label for="weight-field">Вес (кг):*</label>
+              <input class="contact-form__input input-font-reset" type="number" name="weight" id="weight-field"
+                placeholder="7" required>
+            </div>
+            <div class="contact-form__container">
+              <label for="age-field">Возраст (лет):</label>
+              <input class="contact-form__input input-font-reset" type="number" name="age" placeholder="7"
+                id="age-field">
+            </div>
+          </fieldset>
+          <fieldset class="contact-form__about-cat contact-form__about-cat--optional-info">
+            <input class="contact-form__input visually-hidden" type="radio" name="goal" id="lose-weight"
+              value="Похудение" checked>
+            <label class="contact-form__label" for="lose-weight">Похудение</label>
+            <input class="contact-form__input visually-hidden" type="radio" name="goal" id="gain-weight"
+              value="Набор массы">
+            <label class="contact-form__label" for="gain-weight">Набор массы</label>
+            <input class="contact-form__input visually-hidden" type="radio" name="goal" id="dont-know"
+              value="Не знаю (Нужен ваш совет)">
+            <label class="contact-form__label" for="dont-know">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+        </div>
+        <fieldset class="contact-form__about-owner">
+          <legend class="contact-form__legend title title--second">Контактные данные (владельца кота)</legend>
+          <div class="contact-form__input-group">
+            <div class="contact-form__input-container">
+              <label for="email-field">E-mail:*</label>
+              <input class="contact-form__input input-font-reset" type="email" name="email" id="email-field"
+                placeholder="кuklachev@gmail.com" required>
+            </div>
+            <div class="contact-form__input-container">
+              <label for="phone-field">Телефон:*</label>
+              <input class="contact-form__input input-font-reset" type="tel" name="phone" id="phone-field"
+                placeholder="8 (960) 900-60-90" required>
+            </div>
+          </div>
         </fieldset>
-        <fieldset>
-          <label for="#lose-weight">Похудение</label>
-          <input type="radio" name="goal" id="lose-weight" value="Похудение">
-          <label for="#gain-weight">Набор массы</label>
-          <input type="radio" name="goal" id="gain-weight" value="Набор массы">
-          <label for="#dont-know">Не знаю (Нужен ваш совет)</label>
-          <input type="radio" name="goal" id="dont-know" value="Не знаю (Нужен ваш совет)">
+        <fieldset class="contact-form__about-owner">
+          <legend class="contact-form__legend  title title--second">Комментарий</legend>
+          <textarea class="contact-form__comments input-font-reset" name="comments" id="comments-field" cols="30"
+            rows="10">Расскажите обо всех повадках кота</textarea>
         </fieldset>
-        <fieldset>
-          <legend>Контактные данные (владельца кота)</legend>
-          <label for="#email-field">E-mail:*</label>
-          <input type="email" name="email" id="email-field" placeholder="кuklachev@gmail.com" required>
-          <label for="#phone-field">Телефон:*</label>
-          <input type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90" required>
+        <fieldset class="contact-form__about-owner">
+          <legend class="contact-form__legend  title title--second">Дополнительно</legend>
+          <div class="contact-form__checkbox-container">
+            <input class="visually-hidden" type="checkbox" id="sweetener-checkbox" name="sweetener" checked>
+            <label class="contact-form__label contact-form__label--additional"
+              for="sweetener-checkbox">Сахарозаменитель</label>
+            <input class="visually-hidden" type="checkbox" id="drinking-water-checkbox" name="drinking-water">
+            <label class="contact-form__label contact-form__label--additional" for="drinking-water-checkbox">Питьевая
+              вода</label>
+            <input class="visually-hidden" class="input-font-reset" type="checkbox" id="milk-checkbox" name="milk">
+            <label class="contact-form__label contact-form__label--additional" for="milk-checkbox">Молоко</label>
+            <input class="visually-hidden" class="input-font-reset" type="checkbox" id="vitamins-checkbox"
+              name="vitamins">
+            <label class="contact-form__label contact-form__label--additional" for="vitamins-checkbox">Витамины</label>
+          </div>
         </fieldset>
-        <fieldset>
-          <legend>Комментарий</legend>
-          <textarea name="comments" id="comments-field" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset>
-          <legend>Дополнительно</legend>
-          <label for="#sweetener-checkbox">Сахарозаменитель</label>
-          <input type="checkbox" id="sweetener-checkbox" name="sweetener" checked>
-          <label for="#drinking-water-checkbox">Питьевая вода</label>
-          <input type="checkbox" id="drinking-water-checkbox" name="drinking-water">
-          <label for="#milk-checkbox">Молоко</label>
-          <input type="text" id="milk-checkbox" name="milk">
-          <label for="#vitamins-checkbox">Витамины</label>
-          <input type="text" id="vitamins-checkbox" name="vitamins">
-        </fieldset>
-        <button class="button-reset" type="submit">Отправить заявку</button>
+        <button class="button button-reset" type="submit">Отправить заявку</button>
         <span>* — Обязательные поля</span>
       </form>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
-      <div class="map__contact-information">
-        <p>Приглашаем к сотрудничеству дилеров!</p>
-        <address>
-          <p>ул. Большая Конюшенная, д. 19/8</p>
+      <img src="img/map.png" alt="Наш адрес" width="1440" height="400">
+      <div class="cooperation-contacts">
+        <p class="cooperation-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="cooperation-contacts__address">
+          <p>ул. Большая<br> Конюшенная, д. 19/8</p>
           <p>Санкт-Петербург</p>
         </address>
       </div>
